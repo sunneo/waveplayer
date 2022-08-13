@@ -1,0 +1,3 @@
+[submodule "WavePlayer/Libs/utilities"]
+	path = WavePlayer/Libs/utilities
+	url = https://github.com/sunneo/utilities.git

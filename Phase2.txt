@@ -1,0 +1,6 @@
+[done] track server) 負責讓節點註冊，媒合client與media server節點
+[done] media server) 提供圖片串流/聲音串流，圖片串流用來作為interleaving的驗證
+[done] client music searching) 向本地資料庫搜尋(v)，也向track server媒合的media server搜尋
+[done] availability check) 從本地伺服器或者遠端伺服器播放
+[done] realtime streaming) 要支援partial streaming，因此server串流聲音的時候要先將format描述送給播放端，每個client本身要支援播放狀態，讓其他節點可以探索到，並讓其他節點可以串流
+[done] peer-to-peer playing) 要可以向其他節點說明自己擁有哪個檔案的哪些位移以及大小。接收端要向其他伺服器廣播檔案組成，要可以顯示檔案從不同位置組成

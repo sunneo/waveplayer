@@ -1,0 +1,13 @@
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.CV.ML.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.CV.OCR.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.CV.UI.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.CV.VideoStab.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/DirectShowLib-2005.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.CV.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.CV.GPU.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.CV.Stitching.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/Emgu.Util.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/Lib/nvcuda.dll filter=lfs diff=lfs merge=lfs -text
+Project/eSSP_example/ReferenceComponents/CameraCapture/ filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
