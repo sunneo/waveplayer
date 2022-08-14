@@ -142,7 +142,7 @@
             this.buttonTempoDown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonTempoDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTempoDown.ForeColor = System.Drawing.Color.Black;
-            this.buttonTempoDown.Image = global::WavePlayer.Properties.Resources.tempoDown;
+            this.buttonTempoDown.Image = global::MusicPlayer.Properties.Resources.tempoDown;
             this.buttonTempoDown.Location = new System.Drawing.Point(291, 0);
             this.buttonTempoDown.Margin = new System.Windows.Forms.Padding(0);
             this.buttonTempoDown.Name = "buttonTempoDown";
@@ -163,7 +163,7 @@
             this.buttonPitchDown.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonPitchDown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPitchDown.ForeColor = System.Drawing.Color.Black;
-            this.buttonPitchDown.Image = global::WavePlayer.Properties.Resources.Keydown;
+            this.buttonPitchDown.Image = global::MusicPlayer.Properties.Resources.Keydown;
             this.buttonPitchDown.Location = new System.Drawing.Point(205, 0);
             this.buttonPitchDown.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPitchDown.Name = "buttonPitchDown";
@@ -184,7 +184,7 @@
             this.buttonBackward.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonBackward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBackward.ForeColor = System.Drawing.Color.Black;
-            this.buttonBackward.Image = global::WavePlayer.Properties.Resources.backward;
+            this.buttonBackward.Image = global::MusicPlayer.Properties.Resources.backward;
             this.buttonBackward.Location = new System.Drawing.Point(0, 0);
             this.buttonBackward.Margin = new System.Windows.Forms.Padding(0);
             this.buttonBackward.Name = "buttonBackward";
@@ -204,7 +204,7 @@
             this.checkBoxRepeat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.checkBoxRepeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBoxRepeat.ForeColor = System.Drawing.Color.Black;
-            this.checkBoxRepeat.Image = global::WavePlayer.Properties.Resources.repeat;
+            this.checkBoxRepeat.Image = global::MusicPlayer.Properties.Resources.repeat;
             this.checkBoxRepeat.Location = new System.Drawing.Point(491, 0);
             this.checkBoxRepeat.Margin = new System.Windows.Forms.Padding(0);
             this.checkBoxRepeat.Name = "checkBoxRepeat";
@@ -225,7 +225,7 @@
             this.buttonNextSong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonNextSong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonNextSong.ForeColor = System.Drawing.Color.Black;
-            this.buttonNextSong.Image = global::WavePlayer.Properties.Resources.nextsong;
+            this.buttonNextSong.Image = global::MusicPlayer.Properties.Resources.nextsong;
             this.buttonNextSong.Location = new System.Drawing.Point(160, 0);
             this.buttonNextSong.Margin = new System.Windows.Forms.Padding(0);
             this.buttonNextSong.Name = "buttonNextSong";
@@ -246,7 +246,7 @@
             this.buttonStop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStop.ForeColor = System.Drawing.Color.Black;
-            this.buttonStop.Image = global::WavePlayer.Properties.Resources.stop;
+            this.buttonStop.Image = global::MusicPlayer.Properties.Resources.stop;
             this.buttonStop.Location = new System.Drawing.Point(116, 0);
             this.buttonStop.Margin = new System.Windows.Forms.Padding(0);
             this.buttonStop.Name = "buttonStop";
@@ -267,7 +267,7 @@
             this.buttonStartPause.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonStartPause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStartPause.ForeColor = System.Drawing.Color.Black;
-            this.buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+            this.buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
             this.buttonStartPause.Location = new System.Drawing.Point(40, 0);
             this.buttonStartPause.Margin = new System.Windows.Forms.Padding(0);
             this.buttonStartPause.Name = "buttonStartPause";
@@ -288,7 +288,7 @@
             this.buttonTempoUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonTempoUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonTempoUp.ForeColor = System.Drawing.Color.Black;
-            this.buttonTempoUp.Image = global::WavePlayer.Properties.Resources.tempoUp;
+            this.buttonTempoUp.Image = global::MusicPlayer.Properties.Resources.tempoUp;
             this.buttonTempoUp.Location = new System.Drawing.Point(333, 0);
             this.buttonTempoUp.Margin = new System.Windows.Forms.Padding(0);
             this.buttonTempoUp.Name = "buttonTempoUp";
@@ -309,7 +309,7 @@
             this.buttonPitchUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonPitchUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonPitchUp.ForeColor = System.Drawing.Color.Black;
-            this.buttonPitchUp.Image = global::WavePlayer.Properties.Resources.Keyup;
+            this.buttonPitchUp.Image = global::MusicPlayer.Properties.Resources.Keyup;
             this.buttonPitchUp.Location = new System.Drawing.Point(247, 0);
             this.buttonPitchUp.Margin = new System.Windows.Forms.Padding(0);
             this.buttonPitchUp.Name = "buttonPitchUp";
@@ -330,7 +330,7 @@
             this.buttonForward.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.buttonForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonForward.ForeColor = System.Drawing.Color.Black;
-            this.buttonForward.Image = global::WavePlayer.Properties.Resources.fastforward;
+            this.buttonForward.Image = global::MusicPlayer.Properties.Resources.fastforward;
             this.buttonForward.Location = new System.Drawing.Point(78, 0);
             this.buttonForward.Margin = new System.Windows.Forms.Padding(0);
             this.buttonForward.Name = "buttonForward";
@@ -453,7 +453,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Black;
-            this.tabPage1.BackgroundImage = global::WavePlayer.Properties.Resources.bluegradient;
+            this.tabPage1.BackgroundImage = global::MusicPlayer.Properties.Resources.bluegradient;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.labelTitle);

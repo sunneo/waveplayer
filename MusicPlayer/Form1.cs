@@ -237,7 +237,6 @@ namespace WavePlayer
             {
                 pictureBox1.ImageLocation = "";
                 pictureBox1.Visible = false;
-                tabPage1.BackgroundImage = global::WavePlayer.Properties.Resources.bluegradient;
                 tabPage1.BackColor = Color.Transparent;
             }
         }
@@ -279,7 +278,7 @@ namespace WavePlayer
                     SoundTouchEffect.SetPitchSemiTones(currentPitch);
                     SoundTouchEffect.SetTempo(tempo);
                     SoundTouchEffect.SetPlayRate(1.0);
-                    buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                    buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
                 }
             }));
 
@@ -306,7 +305,7 @@ namespace WavePlayer
                     SoundTouchEffect.SetPitchSemiTones(currentPitch);
                     SoundTouchEffect.SetTempo(tempo);
                     SoundTouchEffect.SetPlayRate(1.0);
-                    buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                    buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
                 }
             }
         }
@@ -373,7 +372,7 @@ namespace WavePlayer
                     }
                     else
                     {
-                        buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+                        buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
                     }
                 }
                 else
@@ -406,7 +405,7 @@ namespace WavePlayer
                                 SoundTouchEffect.SetPitchSemiTones(currentPitch);
                                 SoundTouchEffect.SetTempo(tempo);
                                 SoundTouchEffect.SetPlayRate(1.0);
-                                buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                                buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
                             }
                             else
                             {
@@ -417,7 +416,7 @@ namespace WavePlayer
                                 SoundTouchEffect.SetPitchSemiTones(currentPitch);
                                 SoundTouchEffect.SetTempo(tempo);
                                 SoundTouchEffect.SetPlayRate(1.0);
-                                buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+                                buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
                             }
                         }
                         else
@@ -428,7 +427,7 @@ namespace WavePlayer
                             SoundTouchEffect.SetPitchSemiTones(currentPitch);
                             SoundTouchEffect.SetTempo(tempo);
                             SoundTouchEffect.SetPlayRate(1.0);
-                            buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                            buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
                         }
                     }
 
@@ -507,12 +506,12 @@ namespace WavePlayer
             LyricParser = null;
             labelLyric.Text = "";
             labelElapsed.Text = "";
-            buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+            buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
 
             labelTitle.Text = "Streaming From:" + server.Split(':')[0];
             pictureBox1.ImageLocation = "";
             pictureBox1.Visible = false;
-            tabPage1.BackgroundImage = global::WavePlayer.Properties.Resources.bluegradient;
+            tabPage1.BackgroundImage = global::MusicPlayer.Properties.Resources.bluegradient;
             tabPage1.BackColor = Color.Transparent;
         }
         private void SetSource(String FileName, bool fromPlayList = false, bool streamFromRemote = false)
@@ -595,12 +594,12 @@ namespace WavePlayer
             if (!fromPlayList)
             {
                 labelTitle.Text = Path.GetFileName(FileName);
-                tabPage1.BackgroundImage = global::WavePlayer.Properties.Resources.bluegradient;
+                tabPage1.BackgroundImage = global::MusicPlayer.Properties.Resources.bluegradient;
                 tabPage1.BackColor = Color.Transparent;
             }
             labelLyric.Text = "";
             labelElapsed.Text = "00:00:00";
-            buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+            buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
         }
         WavPlayer.Management.MusicPlayList mPlayList = null;
         Locker mListLocker = new Locker();
@@ -722,7 +721,7 @@ namespace WavePlayer
             labelTitle.Text = "";
             labelLyric.Text = "";
             pictureBox1.Visible = false;
-            buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+            buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
         }
 
         private void buttonStartPause_Click(object sender, EventArgs e)
@@ -730,7 +729,7 @@ namespace WavePlayer
             if (Player != null && Player.Playing)
             {
                 Player.Pause();
-                buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+                buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
             }
             else
             {
@@ -765,7 +764,7 @@ namespace WavePlayer
                 SoundTouchEffect.SetPitchSemiTones(currentPitch);
                 SoundTouchEffect.SetTempo(tempo);
                 SoundTouchEffect.SetPlayRate(1.0);
-                buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
             }
         }
 
@@ -856,7 +855,7 @@ namespace WavePlayer
             this.Player.Effects.Add(SoundTouchEffect);
             this.Player.Effects.Add(this.StreamSharingEffect);
             this.Player.Effects.Add(this.SoundVision);
-            buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+            buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
         }
 
         private void checkBoxRepeat_CheckedChanged(object sender, EventArgs e)
@@ -864,11 +863,11 @@ namespace WavePlayer
             RepeatChecked = !RepeatChecked;
             if (RepeatChecked)
             {
-                checkBoxRepeat.Image = global::WavePlayer.Properties.Resources.repeat_activated;
+                checkBoxRepeat.Image = global::MusicPlayer.Properties.Resources.repeat_activated;
             }
             else
             {
-                checkBoxRepeat.Image = global::WavePlayer.Properties.Resources.repeat;
+                checkBoxRepeat.Image = global::MusicPlayer.Properties.Resources.repeat;
             }
         }
 
@@ -1090,7 +1089,7 @@ namespace WavePlayer
                     SoundTouchEffect.SetPitchSemiTones(currentPitch);
                     SoundTouchEffect.SetTempo(tempo);
                     SoundTouchEffect.SetPlayRate(1.0);
-                    buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                    buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
                 }
                 catch (Exception ee)
                 {
@@ -1099,7 +1098,7 @@ namespace WavePlayer
                     this.Player.Effects.Add(SoundTouchEffect);
                     this.Player.Effects.Add(this.StreamSharingEffect);
                     this.Player.Effects.Add(this.SoundVision);
-                    buttonStartPause.Image = global::WavePlayer.Properties.Resources.play;
+                    buttonStartPause.Image = global::MusicPlayer.Properties.Resources.play;
                 }
             }
         }
@@ -1132,7 +1131,7 @@ namespace WavePlayer
                     SoundTouchEffect.SetPitchSemiTones(currentPitch);
                     SoundTouchEffect.SetTempo(tempo);
                     SoundTouchEffect.SetPlayRate(1.0);
-                    buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                    buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
                 }
                 else
                 {
@@ -1142,7 +1141,7 @@ namespace WavePlayer
                     SoundTouchEffect.SetPitchSemiTones(currentPitch);
                     SoundTouchEffect.SetTempo(tempo);
                     SoundTouchEffect.SetPlayRate(1.0);
-                    buttonStartPause.Image = global::WavePlayer.Properties.Resources.pause;
+                    buttonStartPause.Image = global::MusicPlayer.Properties.Resources.pause;
                 }
             }
 

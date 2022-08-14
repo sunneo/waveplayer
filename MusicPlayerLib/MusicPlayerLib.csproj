@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7696BF76-3AD6-4704-A189-BAC9011FA7FC}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WavePlayer</RootNamespace>
     <AssemblyName>WavePlayer</AssemblyName>
@@ -33,7 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>cloud_music_icon_U5g_icon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework">
@@ -108,64 +112,24 @@
     <Compile Include="Enhance\SoundTouchEffect.cs" />
     <Compile Include="Enhance\SoundVisualizationEffect.cs" />
     <Compile Include="Enhance\StreamBufferSharingEffectOperator.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.Server.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Interfaces\EffectEventArgs.cs" />
     <Compile Include="Interfaces\ICanvas.cs" />
     <Compile Include="Interfaces\IEffectOperator.cs" />
     <Compile Include="Interfaces\IFileSystem.cs" />
     <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="MediaServer\MediaNode.cs" />
-    <Compile Include="UI\DoubleBufferedButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UI\DoubleBufferedSplitContainer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UI\DoubleBufferedTabControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UI\DoubleBufferedTabPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="WavPlayer\Lyrics\LyricItem.cs" />
     <Compile Include="WavPlayer\Lyrics\LyricLine.cs" />
     <Compile Include="WavPlayer\Management\MusicPlayList.cs" />
     <Compile Include="WavPlayer\SoundBuffer\EventRaisingSoundBuffer.cs" />
     <Compile Include="WavPlayer\SoundBuffer\SoundUtil.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WavPlayer\Streaming\StreamedSound.cs" />
-    <Compile Include="UI\DoubleBufferedListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UI\MusicList.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\MusicList.Designer.cs">
-      <DependentUpon>MusicList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\TrackBar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\TrackBar.Designer.cs">
-      <DependentUpon>TrackBar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Utility.cs" />
+    <Compile Include="TimeSpanUtility.cs" />
     <Compile Include="WavPlayer\Lyrics\LyricParser.cs" />
     <Compile Include="WavFormat\Format\WaveFile.cs" />
     <Compile Include="WavPlayer\Management\MusicListItem.cs" />
     <Compile Include="WavPlayer\Player\WavPlayer.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="WavPlayer\SoundBuffer\EventRaisingSoundBuffer.resx">
       <DependentUpon>EventRaisingSoundBuffer.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,12 +143,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\MusicList.resx">
-      <DependentUpon>MusicList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\TrackBar.resx">
-      <DependentUpon>TrackBar.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -199,33 +157,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Icons\backward.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\fastforward.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\list.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\pause.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\play.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\repeat.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\stop.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\repeat_activated.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\BlueGradient.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ServerFunctionCodes\ServerFunctionCodes.csproj">
       <Project>{2e0846e5-049e-46a1-90ef-830a4221be4b}</Project>
       <Name>ServerFunctionCodes</Name>
@@ -234,23 +165,6 @@
       <Project>{ea570592-1fab-412f-aa0c-159c947608cd}</Project>
       <Name>SoundTouch.Net</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\Keydown.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\Keyup.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\tempoDown.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\tempoUp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="cloud_music_icon_U5g_icon.ico" />
-    <None Include="Icons\nextsong.png" />
-    <None Include="Icons\Cloud-Music-icon.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
